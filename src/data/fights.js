@@ -13,5 +13,12 @@ export const fights = [
       fighters: ["Islam Makhachev", "Charles Oliveira"],
       date: "2026-07-01",
       type: "ufc"
+    },
+    {
+      id: 3,
+      event: "KSI vs Logan Paul",
+      fighters: ["KSI", "Logan Paul"],
+      date: "2026-08-15",
+      type: "influencer"
     }
   ];

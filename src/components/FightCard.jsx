@@ -1,12 +1,17 @@
-function FightCard(){
+function FightCard({ fight }) {
     return (
-        <div className="card">
-            <h3>{fight.event}</h3>
-            <p>{fight.fighters.join(" vs ")}</p>
-            <p>{fight.date}</p>
-            <span>{fight.type}</span>
-        </div>
+      <div style={{
+        border: "1px solid #ccc",
+        borderRadius: "10px",
+        padding: "16px",
+        marginBottom: "12px"
+      }}>
+        <h3>{fight.event}</h3>
+        <p><strong>{fight.fighters.join(" vs ")}</strong></p>
+        <p>Date: {fight.date}</p>
+        <p>Type: {fight.type}</p>
+      </div>
     );
-}
+  }
 
 export default FightCard;

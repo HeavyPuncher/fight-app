@@ -1,20 +1,31 @@
+import { useState } from "react";
 import { fights } from "../data/fights";
-// import FightList from "../components/FightList";
+import FightCard from "../components/FightCard";
 
 function Fights() {
+    const [filter, setFilter] = useState("all")
+
+    const filteredFights = 
+        filter === "all" 
+        ? fights 
+        : fights.filter(fight => fight.type === filter);
+
     return (
-        <div>
-            <h2>Upcoming Fights</h2>
-            {fights.map(fight =>(
-                <div key={fight.id}>
-                    <h3>{fight.event}</h3>
-                    <h3>{fight.fighters.join(" vs ")}</h3>
-                    <h3>{fight.date}</h3>
-                    <h3>{fight.type}</h3>
-                </div>
-            ))}
+      <div>
+        <h2>Upcoming Fights</h2>
+
+        <div style={{ marginBottom: "16px" }}>
+            <button onClick={() => setFilter("all")}>All</button>
+            <button onClick={() => setFilter("boxing")}>Boxing</button>
+            <button onClick={() => setFilter("ufc")}>UFC</button>
+            <button onClick={() => setFilter("influencer")}>Influencer</button>
         </div>
+  
+        {filteredFights.map(fight => (
+          <FightCard key={fight.id} fight={fight} />
+        ))}
+      </div>
     );
-}
+  }
 
 export default Fights;
