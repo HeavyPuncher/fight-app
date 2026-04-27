@@ -27,6 +27,5 @@ function Fights() {
       </div>
     );
   }
-  //test commit
 
 export default Fights;
