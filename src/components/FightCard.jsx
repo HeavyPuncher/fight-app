@@ -9,6 +9,7 @@ function FightCard({ fight }) {
         <h3>{fight.event}</h3>
         <p><strong>{fight.fighters.join(" vs ")}</strong></p>
         <p>Date: {fight.date}</p>
+        <p>Location: {fight.location}</p>
         <p>Type: {fight.type}</p>
       </div>
     );

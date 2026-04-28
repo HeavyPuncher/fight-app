@@ -5,6 +5,7 @@ export const fights = [
       event: "THE DAY",
       fighters: ["Naoya Inoue", "Junto Nakatani"],
       date: "02-05-2026",
+      location: "Tokyo, Japan",
       type: "boxing"
     },
     {
@@ -12,6 +13,7 @@ export const fights = [
       event: "UFC FIGHT NIGHT: DELLA MADDALENA VS PRATES",
       fighters: ["JackDella Maddalena", "Carlos Prates"],
       date: "02-05-2026",
+      location: "Perth, Australia",
       type: "ufc"
     },
     {
@@ -19,6 +21,7 @@ export const fights = [
       event: "BEAUTY VS THE BEAST",
       fighters: ["TOMMY FURY", "EDDIE HALL"],
       date: "13-06-2026",
+      location: "Manchester, UK",
       type: "influencer"
     },
     
@@ -27,6 +30,7 @@ export const fights = [
       event: "Benavidez vs Ramirez",
       fighters: ["David Benavidez", "Gilberto 'Zurdo' Ramirez"],
       date: "02-05-2026",
+      location: "Las Vegas, USA",
       type: "boxing"
     },
     {
@@ -34,6 +38,7 @@ export const fights = [
       event: "Wardley vs Dubois",
       fighters: ["Fabio Wardley", "Daniel Dubois"],
       date: "09-05-2026",
+      location: "Manchester, UK",
       type: "boxing"
     }
   ];
