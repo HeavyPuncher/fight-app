@@ -28,4 +28,6 @@ function Fights() {
     );
   }
 
+  // Another test commit
+
 export default Fights;
