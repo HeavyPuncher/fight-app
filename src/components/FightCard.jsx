@@ -10,7 +10,7 @@ function FightCard({ fight }) {
         <p><strong>{fight.fighters.join(" vs ")}</strong></p>
         <p>Date: {fight.date}</p>
         <p>Location: {fight.location}</p>
-        <p>Type: {fight.type}</p>
+        <p>{fight.type.toUpperCase()}</p>
       </div>
     );
   }
