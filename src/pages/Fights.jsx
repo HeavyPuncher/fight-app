@@ -10,10 +10,18 @@ function Fights() {
         ? fights 
         : fights.filter(fight => fight.type === filter);
 
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const upcomingFights = filteredFights.filter(fight => {
+      return new Date(fight.date) >= today;
+    });
+    
+    const previousFights = filteredFights.filter(fight => {
+      return new Date(fight.date) < today;
+    });
+
     return (
       <div>
-        <h2>Upcoming Fights</h2>
-
         <div className="flex gap-3 mb-6">
           <button
             onClick={() => setFilter("all")}
@@ -59,10 +67,25 @@ function Fights() {
             Influencer
           </button>
         </div>
-  
-        {filteredFights.map(fight => (
-          <FightCard key={fight.id} fight={fight} />
-        ))}
+        <div>
+          <h2 className="text-2xl font-bold mb-4">Upcoming Fights</h2>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-10">
+            {upcomingFights.map(fight => (
+              <FightCard key={fight.id} fight={fight} />
+            ))}
+          </div>
+
+          <h2 className="text-2xl font-bold mb-4">Previous Fights</h2>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {previousFights.map(fight => (
+              <FightCard key={fight.id} fight={fight} />
+            ))}
+          </div>
+        </div>
+
+        
       </div>
     );
   }
