@@ -70,7 +70,7 @@ function Fights() {
         <div>
           <h2 className="text-2xl font-bold mb-4">Upcoming Fights</h2>
 
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 mb-10">
+          <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1 mb-10">
             {upcomingFights.map(fight => (
               <FightCard key={fight.id} fight={fight} />
             ))}
@@ -78,7 +78,7 @@ function Fights() {
 
           <h2 className="text-2xl font-bold mb-4">Previous Fights</h2>
 
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
             {previousFights.map(fight => (
               <FightCard key={fight.id} fight={fight} />
             ))}
