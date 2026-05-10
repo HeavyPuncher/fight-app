@@ -6,7 +6,11 @@ export const fights = [
     fighters: ["Naoya Inoue", "Junto Nakatani"],
     date: "2026-05-02",
     location: "Tokyo, Japan",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Bantamweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Flyweight" }
+    ]
   },
   {
     id: 2,
@@ -14,7 +18,11 @@ export const fights = [
     fighters: ["Jack Della Maddalena", "Carlos Prates"],
     date: "2026-05-02",
     location: "Perth, Australia",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Flyweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Featherweight" }
+    ]
   },
   {
     id: 3,
@@ -22,7 +30,10 @@ export const fights = [
     fighters: ["Gilberto Ramirez", "David Benavidez"],
     date: "2026-05-02",
     location: "Las Vegas, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Super Middleweight" }
+    ]
   },
   {
     id: 4,
@@ -30,7 +41,11 @@ export const fights = [
     fighters: ["Fabio Wardley", "Daniel Dubois"],
     date: "2026-05-09",
     location: "Manchester, UK",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Heavyweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Cruiserweight" }
+    ]
   },
   {
     id: 5,
@@ -38,7 +53,12 @@ export const fights = [
     fighters: ["Khamzat Chimaev", "Sean Strickland"],
     date: "2026-05-09",
     location: "Newark, NJ, USA",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Lightweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Middleweight" },
+      { fighters: ["Fighter E", "Fighter F"], weightClass: "Welterweight" }
+    ]
   },
   {
     id: 6,
@@ -46,7 +66,10 @@ export const fights = [
     fighters: ["Angelo Leo", "Raeese Aleem"],
     date: "2026-05-09",
     location: "Atlanta, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Super Bantamweight" }
+    ]
   },
   {
     id: 7,
@@ -54,7 +77,10 @@ export const fights = [
     fighters: ["Shane Mosley Jr", "Serhii Bohachuk"],
     date: "2026-05-10",
     location: "Las Vegas, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Light Middleweight" }
+    ]
   },
   {
     id: 8,
@@ -62,7 +88,11 @@ export const fights = [
     fighters: ["Arnold Allen", "Borrachinha Costa"],
     date: "2026-05-16",
     location: "Las Vegas, NV, USA",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Middleweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Featherweight" }
+    ]
   },
   {
     id: 9,
@@ -70,7 +100,10 @@ export const fights = [
     fighters: ["Keyshawn Davis", "Nahir Albright"],
     date: "2026-05-16",
     location: "Norfolk, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Lightweight" }
+    ]
   },
   {
     id: 10,
@@ -78,7 +111,11 @@ export const fights = [
     fighters: ["Oleksandr Usyk", "Rico Verhoeven"],
     date: "2026-05-23",
     location: "Giza, Egypt",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Heavyweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Heavyweight" }
+    ]
   },
   {
     id: 11,
@@ -86,7 +123,11 @@ export const fights = [
     fighters: ["Song Yadong", "Deiveson Figueiredo"],
     date: "2026-05-30",
     location: "Macao",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Bantamweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Flyweight" }
+    ]
   },
   {
     id: 12,
@@ -94,7 +135,10 @@ export const fights = [
     fighters: ["O'Shaquie Foster", "Raymond Ford"],
     date: "2026-05-30",
     location: "Houston, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Super Featherweight" }
+    ]
   },
   {
     id: 13,
@@ -102,7 +146,10 @@ export const fights = [
     fighters: ["Dmitry Bivol", "Michael Eifert"],
     date: "2026-05-30",
     location: "Yekaterinburg, Russia",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Light Heavyweight" }
+    ]
   },
   {
     id: 14,
@@ -110,7 +157,11 @@ export const fights = [
     fighters: ["Belal Muhammad", "Gabriel Bonfim"],
     date: "2026-06-06",
     location: "Las Vegas, NV, USA",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Welterweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Welterweight" }
+    ]
   },
   {
     id: 15,
@@ -118,7 +169,10 @@ export const fights = [
     fighters: ["Ricardo Rafael Sandoval", "Galal Yafai"],
     date: "2026-06-06",
     location: "Sheffield, UK",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Flyweight" }
+    ]
   },
   {
     id: 16,
@@ -126,7 +180,10 @@ export const fights = [
     fighters: ["Jesse 'Bam' Rodriguez", "Antonio Vargas"],
     date: "2026-06-13",
     location: "Glendale, USA",
-    type: "boxing"
+    type: "boxing",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Super Flyweight" }
+    ]
   },
   {
     id: 17,
@@ -134,7 +191,11 @@ export const fights = [
     fighters: ["Tommy Fury", "Eddie Hall"],
     date: "2026-06-13",
     location: "Manchester, UK",
-    type: "influencer"
+    type: "influencer",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Cruiserweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Heavyweight" }
+    ]
   },
   {
     id: 18,
@@ -142,7 +203,10 @@ export const fights = [
     fighters: ["Floyd Mayweather Jr", "Mike Zambidis"],
     date: "2026-06-13",
     location: "Athens, Greece",
-    type: "influencer"
+    type: "influencer",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Exhibition" }
+    ]
   },
   {
     id: 19,
@@ -150,6 +214,11 @@ export const fights = [
     fighters: ["Illia Topuria", "Justin Gaethje"],
     date: "2026-06-14",
     location: "Washington, DC, USA",
-    type: "ufc"
+    type: "ufc",
+    undercard: [
+      { fighters: ["Fighter A", "Fighter B"], weightClass: "Bantamweight" },
+      { fighters: ["Fighter C", "Fighter D"], weightClass: "Lightweight" },
+      { fighters: ["Fighter E", "Fighter F"], weightClass: "Welterweight" }
+    ]
   }
 ];
