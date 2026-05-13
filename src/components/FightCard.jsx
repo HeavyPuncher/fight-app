@@ -1,3 +1,4 @@
+import { useState } from "react";
 function FightCard({ fight }) {
   const [showUndercard, setShowUndercard] = useState(false);
 

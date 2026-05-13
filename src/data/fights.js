@@ -193,8 +193,13 @@ export const fights = [
     location: "Manchester, UK",
     type: "influencer",
     undercard: [
-      { fighters: ["Fighter A", "Fighter B"], weightClass: "Cruiserweight" },
-      { fighters: ["Fighter C", "Fighter D"], weightClass: "Heavyweight" }
+      { fighters: ["Anthony Taylor", "Matty Floyd"], weightClass: "Light Heavyweight" },
+      { fighters: ["Brandon Scott", "Brendon Davis"], weightClass: "Light Heavyweight" },
+      { fighters: ["Charlie Robert", "Baffour Boateng"], weightClass: "Heavyweight" },
+      { fighters: ["Jack Kay", "Daniel O'Reilly"], weightClass: "Light Heavyweight" },
+      { fighters: ["Jade Jones", "Alaena Potocnik"], weightClass: "Featherweight" },
+      { fighters: ["Adam Brooks", "Rahim Pardesi"], weightClass: "Light Heavyweight" },
+      { fighters: ["Leah Gotti", "Arabella del Busso"], weightClass: "Super Bantamweight" }
     ]
   },
   {
